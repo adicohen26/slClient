@@ -1,0 +1,485 @@
+.about{
+    background-color: #D4E1D8;
+    display: block;
+    padding: 0 2rem ;
+
+}
+
+.about-discription{
+    background-color: white;
+    padding: 6rem 2rem 2rem 2rem;
+    width: 70%;
+    border-radius: 0.5rem;
+    position: relative;
+    right: 2.4rem;
+    bottom: 4rem;
+    
+}
+
+.aboutImg{
+    background-image: url(./images/about-img.jpg);
+    width: 75%;
+    height: 20rem;
+    border-radius: 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: fill;
+    position: relative;
+    z-index: 1 ;
+    left: 1rem;
+}
+.aboutIntro{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+    
+}
+
+
+body{
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D4E1D8;
+    direction:rtl;
+}
+
+.cardsParent{
+    margin:20px;
+}
+
+.card-discription-flex-box{
+    display: inline-flex;
+    width: 100%;
+}
+
+.card-part-discription{
+    display: inline-flex;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.card-icon{
+    margin: 0.5rem;
+    cursor: pointer;
+
+  transition: all 0.3s ease-out;
+}
+
+.card-header{
+    display: inline-flex;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.circle {
+    margin:  0 auto 0 auto;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    position:relative;
+    bottom: 5rem;
+    z-index: -2;
+    display: flow-root;
+    
+}
+.contact-link{
+    color: #3B5B66;
+    text-decoration: none;
+    padding: 1% 4%;
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.392);
+    font-size: 27px;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0.5rem 0;
+
+}
+.contact-link :hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.contact-ways{
+    display: inline-flex; 
+}
+.contact-ways p{
+    color:#3B5B66;
+    font-size: 16px;
+    margin: 20px;
+}
+
+@keyframes blinker{
+    0%{opacity:1.0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1.0;}
+}
+
+.copyright{
+    color: white;
+    display: inline-flex;
+    width: 98%;
+    background-color:rgba(0, 0, 0, 0.18);
+    padding: 1%;
+    justify-content: center;
+    align-items: center
+}
+.darkHeading{
+    color: #3B5B66;
+    margin: auto 0.5rem;
+    /* text-shadow: 1px 1px 2px #3B5B66; */
+}
+
+.faceVid{
+    background-image: url("./images/desertWithBackground.jpg") ;
+    /* Full height */
+  height:  55rem;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faceVid h1{
+    color: white;
+    text-align:justify;
+    margin: 0;
+    /* font-size: 400%; */
+    padding-top:  3rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+    typing 3.5s steps(30, end),
+    /* typing 3.5s infinite, */
+    blink-caret .5s step-end infinite;
+    animation-iteration-count: 10;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.footer{
+    background-color: #F29E9B;
+    text-align: center;
+}
+
+.footer img{
+    width: 20%;
+    margin :20px;
+}
+
+.footer-contact-container{
+    margin: 3rem;
+}
+
+.footer-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #3B5B66;
+    margin:2%;
+}
+.footer-link :hover{
+    color: white;
+}
+
+.footer hr{
+    border-top: solid;
+}
+
+.frontImg{
+    background-image: url("./images/deserNoBackground1.png");
+    height:  55rem;
+    width: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top:0px;
+}
+
+
+h1{
+    color: white;
+ font-size: 55px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+hr{
+    color:#D4E1D8;
+     width:70%;
+     border-top:dashed;
+     border-bottom:0px; 
+     margin-top:15px;
+}
+
+.header{
+    padding: 10% 0;
+}
+
+.emphasis{
+    text-decoration: #F29E9B wavy underline;
+    
+
+}
+
+.lightHeading{
+    color: white;
+    margin: auto 0.5rem;
+}
+
+.mainHeading{
+    display: inline-block;
+    padding-top: 2rem;
+}
+
+.newsletter{
+    background-color: #3B5B66;
+    display: block;
+    /* width: 100%; */
+}
+.newsletter-container h3{
+    margin:5%;
+    margin-right: 0;
+    font-size:30px;
+}
+
+.newsletter-form input{
+    font-size: 18px;
+    height: 31%;
+    border-radius: 10px;
+    border-width: 0;
+    width: 60%;
+    text-align: left;
+    padding: 10px;
+    margin:2rem;
+    min-width: 11rem;
+}
+.newsletter-form{
+    display: inline-flex;
+    align-items: center;
+    /* min-width; */
+
+}
+
+.newsletter-form button{
+    min-width: 10rem;
+}
+.newsletter-container{
+display: inline-flex;
+align-items: center;
+}
+
+
+
+.overlay{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* text-shadow: 2px 2px 8px #0000008e; */
+ }
+
+ .overlay h2{
+    margin: 0px;
+ }
+
+p{
+    font-size: 0.7rem;
+}
+
+
+
+.popup{
+    position:absolute;
+    top: 10%;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    overflow:scroll;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    padding: 10%;
+}
+
+.popup p{
+    font-size: 16px;
+}
+.popup-info-container{
+    display: inline-flex;
+    width:100%;
+    align-items: center;
+}
+
+.popup-background{
+    overflow:scroll;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 1000;
+    transition: opacity 500ms;
+}
+
+.popup-info-options{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+
+}
+
+.previewProduct{
+    text-align: end;
+    margin: 0 auto 0 auto;
+    padding: 1rem 2rem;
+    
+}
+
+.previewProduct img{
+    display: flow-root;
+    position: absolute;
+    bottom: -4rem;
+    z-index: -1;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 0 auto;
+
+}
+
+.productDiscription{
+    text-align: center;
+    padding : 1rem;
+    /* position: relative; */
+}
+
+.productDiscription button{
+    display: block;
+    min-width: 11rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.rectengle{
+    text-align: center;
+    margin: 2.3rem 5% 0 5%;
+    width: 70%;
+    height: 35rem;
+    border: 0.8rem;
+    border-style: solid;
+    border-color: #F29E9B;
+    /* display: inline-block; */
+    position: absolute;
+}
+.testimonials .rectengle{
+    color: red;
+    position: absolute ;
+    margin: 0;
+    top: 6.5rem;
+    left: 2rem;
+    width: 23.5rem ;
+    height:5rem !important;
+    border-left: 0rem;
+    border-top:0rem;
+
+}
+
+.review{
+    background-color: white;
+    padding: 1rem;
+    margin-right: 2rem;
+    z-index: 4 !important;
+}
+
+
+.review-quote-right{
+    position: relative;
+    top:3rem;
+    right: 2rem;
+}
+.review-quote-left{
+    position: relative;
+    bottom:1.5rem;
+    right:19rem;
+}
+.review-name{
+position: relative;
+bottom: 4.5rem;
+right: 1rem;
+}
+.testimonials p{
+    font-size: 16px;
+}
+.seconderyHeading{
+    color: #F29E9B;
+}
+
+.section-container{
+    padding: 0 1rem ;
+
+}
+
+.service-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: white !important;
+}
+
+ .mySwiper .swiper-button-next{
+/* margin-top: 300px; */
+top:250px !important;
+
+}
+.mySwiper .swiper-button-prev{
+    top:250px !important;
+    right: 500px !important;
+    /* margin-bottom: 100px; */
+    }
+
+.swiper-photo-container{    
+    padding: 4rem 2rem 1rem;
+
+}
+
+.swiper-photo{
+    max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.testimonials {
+    background-color: #D4E1D8;
+    margin: 0 auto 0 auto;
+
+}
+.testimonials-swiper{
+    margin: 0 auto 0 auto;
+}
+

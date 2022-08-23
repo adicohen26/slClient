@@ -1,0 +1,235 @@
+/* computer */
+@media (min-width:1024px) {
+    h2{
+        font-size: 70px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .faceVid h1{
+        font-size: 1100%;
+        /* padding-top:  5.5rem; */
+
+    }
+    .section-container{
+        padding :3% 15% 3% 15% ;
+    }
+    .mainHeading{
+        padding-top:0 ;
+    }
+    .rectengle{
+        width:45%;
+        height: 30rem;
+        /* margin :0 10% 0 10%; */
+        /* position: flex;
+        align-items:center; */
+        /* padding: 0; */
+        direction: ltr;
+    }
+    .aboutIntro{
+        /* width:40%;
+        padding-top: 3%;
+        padding-right: 0rem;
+        justify-content:left; */
+        width: 40%;
+        padding-top: 6%;
+        padding-right: 3.5rem;
+        justify-content: center;
+    }
+    .aboutImg{
+        width:50%;
+        height: 30rem;
+        /* width: 40rem; */
+        right:2rem;
+    }
+    .about-discription{
+        width:60%;
+        right:0;
+        bottom:3rem;
+        font-size: 140%;
+        padding: 7%;
+        padding-right: 7%;
+    }
+    .about-info{
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    .circle{
+        width: 22rem;
+        height: 22rem;
+    }
+    .previewProduct img{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        bottom: -5rem;
+        display: flow-root;
+        /* display: block; */
+        /* position: relative; */
+    }
+    .preview-heading-container{
+        width:80%;
+        display:flow-root;
+        text-align: left;
+    }
+    .previewProduct{
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 3rem 2rem
+    }
+    .stack-elements-container{
+        text-align: center;
+        height: 100%;
+        margin: 0 auto 0 auto;
+    }
+    .swiper-content{
+        display:flex;
+        justify-content:space-between;
+    }
+    .all-cards-container{
+        width:100%;
+        
+    }
+    .small-card{
+        width:50%
+    }
+    .small-cards-container{
+        display: inline-flex;
+        width:100%;
+    }
+    .cardsParent{
+        width: 45%;
+    }
+    .footer img{
+        width:10%;
+    }
+    
+}
+
+/* tablet */
+@media screen and (min-width: 730px) and (max-width :1023px) {
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .faceVid h1{
+        font-size: 800%;
+        padding-top:  5.5rem;
+    }
+    
+    .section-container{
+        padding :0 10% 5% 10% ;
+    }
+    .rectengle{
+        width:50%;
+        height: 20rem;
+    }
+    .aboutIntro{
+        width: 50%;
+    padding-top: 6%;
+    padding-right: 2rem;
+    justify-content: center;
+    }
+    .aboutImg{
+        width:50%;
+        height: 20rem;
+        right:2rem;
+    }
+    .about-discription{
+        width:60%;
+        right:0;
+        bottom:3rem;
+        font-size: 100%;
+        padding: 5%;
+        padding-right: 7%;
+    }
+    .about-info{
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    .cardsParent{
+        width: 80%;
+    }
+}
+
+/* phone */
+@media (min-width:360px) and (max-width:731px){
+    .faceVid h1{
+        font-size: 400%;
+        line-height: 100%;
+    }
+    .about-discription{
+        /* width: 75 /%; */
+        font-size: 80%;
+    }
+    .about{
+    padding: 0 2rem ;
+    }
+    .testimonials .rectengle{
+        top: 8rem;
+        left: 1.5rem;
+        width: 16.5rem;
+    }
+    .testimonials{
+        width:20rem;
+    }
+    .review-quote-left{
+        right:17rem;
+    }
+    .footer img{
+        width: 50%;
+        margin :20px;
+    }
+}
+
+@media(max-width:364px){
+    .testimonials .rectengle{
+        display: none;
+    }
+}
+
+/* computer and tablet */
+@media (min-width:732px){
+    .popup{
+        width:50%;
+        height:70%;
+        position: relative;
+        margin: 0 auto 0 auto;
+        border-radius: 20px;
+        padding:4%;
+    transition: all 5s ease-in-out;
+    overflow:hidden;
+    }
+
+    .popup-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .swiper-photo-container{
+        width:35%;
+    }
+    .popup-service-description{
+        text-align: center;
+    }
+    .popup-text-area{
+        overflow:scroll;
+    }
+    .testimonials{
+        width:30rem;
+    }
+    .review-quote-left{
+        right:26rem;
+    }
+    .testimonials .rectengle{
+        top: 6.7rem;
+        left: 4.5rem;
+    }
+}
+
+
+
