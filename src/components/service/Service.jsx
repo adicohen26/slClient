@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 import Popup from "./Popup";
 import { useSpring, animated } from 'react-spring';
+import Header from "../Header";
 
 function Service(props){
     const { service } = useParams();
@@ -25,8 +26,9 @@ function Service(props){
       });
 
     return <div className="section-container">
+        
         {isPending && <h1>loading ..</h1>}
-        {data && <h2 className="darkHeading">{data[0].typeName}</h2>}
+        {data &&<Header heading={data[0].typeName} subHeading="" btnTitle="חזרה לכל החוויות" link="/services"/>}
         <div className="service-card-container">
             {data && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} openPopup={openPopup}/>)}
         </div>

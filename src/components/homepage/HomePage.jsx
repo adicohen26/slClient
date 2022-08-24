@@ -5,7 +5,8 @@ import Teaser from "./Teaser";
 import Testimonials from "./Testimonial";
 import useFetch from "../../useFetch";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+// import AllServices from "../allservices/AllServices";
+import AllServices from "../allServices/AllServices.jsx";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,6 +20,7 @@ function HomePage(){
         <FaceVideo />
         <About />
         {data && <Teaser id={"services"} preview={data.previewOptions}/>}
+        {/* <AllServices /> */}
         {data && <Testimonials reviews={data.reviews} />}
         <Newsletter />
     </div>)

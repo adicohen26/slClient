@@ -8,7 +8,7 @@ import { CardActionArea } from '@mui/material';
 import { margin } from "@mui/system";
 
 function SubjectCard(props){
-  const imgUrl="../../images/"+props.img;
+  const imgUrl="../../images/services/"+props.img;
   let cssClasses="";
 
     return (<Card className="all-cards-container">

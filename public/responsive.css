@@ -99,6 +99,11 @@
         display: inline-flex;
         width:100%;
     }
+    .small-cards-container.row-two{
+        position: relative;
+        bottom: 7px;
+    }
+
     .cardsParent{
         width: 45%;
     }
@@ -183,6 +188,10 @@
     .footer img{
         width: 50%;
         margin :20px;
+    }
+    .newsletter-form{
+        flex-wrap: wrap;
+    justify-content: center;
     }
 }
 
