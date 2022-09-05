@@ -46,7 +46,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm start --if-present
+        npm run dev --if-present
         npm run test --if-present
 
     - name: Upload artifact for deployment job
@@ -54,7 +54,9 @@ jobs:
       with:
         name: node-app
         path: .
-
+    - name: add process.json
+      run: |
+        echo '{ script: "serve", env: { PM2_SERVE_SPA: "true", PM2_SERVE_HOMEPAGE: "/index.html" } }' >> build/process.json
   deploy:
     permissions:
       contents: none
