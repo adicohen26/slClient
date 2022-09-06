@@ -14,13 +14,13 @@ import Newsletter from "./Newsletter";
 
 
 function HomePage(){
-    const {data, isPending, error}=useFetch("http://localhost:5000/");
+    const {data, isPending, error}=useFetch(process.env.REACT_APP_BASE_URL);
    return (<div>
         {isPending && <h1>loading...</h1>}
         <FaceVideo />
         <About />
         {data && <Teaser id={"services"} preview={data.previewOptions}/>}
-        {/* <AllServices /> */}
+        <AllServices />
         {data && <Testimonials reviews={data.reviews} />}
         <Newsletter />
     </div>)

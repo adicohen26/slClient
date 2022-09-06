@@ -37,6 +37,10 @@
     
 }
 
+.all-services{
+    background-color: #F29E9B;
+}
+
 
 body{
     font-family: 'Assistant', sans-serif;
@@ -48,6 +52,11 @@ body{
 
 .body-container{
     margin-bottom: 5%;
+    background-color: #D4E1D8;
+}
+
+.body-container .all-services{
+    background-color: #D4E1D8;
 }
 
 .cardsParent{

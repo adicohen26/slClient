@@ -8,7 +8,7 @@ import Header from "../Header";
 
 function Service(props){
     const { service } = useParams();
-    const url="http://localhost:5000"+"/services/"+service;
+    const url=process.env.REACT_APP_BASE_URL+"/services/"+service;
     const {data,isPending,error}=useFetch(url);
     const [isOpen,setIsOpen]=useState(false);
     const [selectedCard, setSelectedCard]=useState("");

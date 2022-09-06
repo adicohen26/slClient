@@ -3,15 +3,14 @@ import SubjectCard from "./SubjectCard";
 import Header from "../Header";
 
 function AllServices(){
-    return<div className="section-container body-container" >
-        <Header heading="כל החווית שלנו" subHeading="הגיע הזמן לבחור בעצמך"/>
-        <SubjectCard name="קורסים" img="panBanner.png" link="/services/course"/>
+    return<div className="section-container all-services">
+        <SubjectCard name="קורסים" img="toolsBanner.png" link="/services/course"/>
         <div className="small-cards-container">
            <SubjectCard name="סדנא משלבת הרצאה" img="eggBanner.png" link="/services/workshop" />
-            <SubjectCard name="דוכני בוטיק" img="toolsBanner.png" link="/services/boutiqueBooth" />
+            <SubjectCard name="דוכני בוטיק" img="woodTrayBanner.png" link="/services/boutiqueBooth" />
         </div>
         <div className="small-cards-container row-two">
-            <SubjectCard name="סדנאות" img="woodTrayBanner.png" link="/"/>
+            <SubjectCard name="סדנאות" img="panBanner.png" link="/"/>
             <SubjectCard name="הרצאות" img="booksBanner.png" link="/" />
         </div>
 </div>
