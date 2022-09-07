@@ -14,7 +14,7 @@ import Newsletter from "./Newsletter";
 
 
 function HomePage(){
-    console.log("im in the homepage, trying to fetch this url " +process.env.BASE_URL); 
+    console.log("im in the homepage, trying to fetch this url " +process.env.REACT_APP_BASE_URL); 
     const {data, isPending, error}=useFetch(process.env.REACT_APP_BASE_URL);
    return (<div>
         {isPending && <h1>loading...</h1>}
