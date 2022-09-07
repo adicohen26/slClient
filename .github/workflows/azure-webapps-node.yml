@@ -75,6 +75,9 @@ jobs:
         
     - name: unzip artifact for deployment
       run: unzip release.zip
+      
+    - name: Create .env file
+      run: echo REACT_APP_BASE_URL="https://sharonandlironbe.azurewebsites.net" >> .env
 
     - name: 'Deploy to Azure WebApp'
       id: deploy-to-webapp 
