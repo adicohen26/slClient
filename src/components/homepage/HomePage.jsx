@@ -15,7 +15,7 @@ import Newsletter from "./Newsletter";
 
 function HomePage(){
     console.log("im in the homepage, trying to fetch this url " +process.env.REACT_APP_BASE_URL); 
-    const {data, isPending, error}=useFetch(process.env.REACT_APP_BASE_URL);
+    const {data, isPending, error}=useFetch("https://sharonandlironbe.azurewebsites.net/");
    return (<div>
         {isPending && <h1>loading...</h1>}
         <FaceVideo />
