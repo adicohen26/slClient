@@ -6,7 +6,7 @@ const useFetch = (url) => {
     const [isPending,setPanding]=useState((true));
     useEffect(() => {
         console.log(url + " trying to fetch this url");
-        fetch(url,{ mode: 'no-cors'})
+        fetch(url)
         .then((response) => {
             if(!response.ok){
                 console.log("this is the respond for the fetch");
