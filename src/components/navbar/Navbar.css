@@ -29,7 +29,7 @@
 .logo{
     font-weight: bold;
     display: inline-block;
-}
+} 
 
 .navbar{
     background: white;
@@ -59,11 +59,11 @@
     cursor: pointer;
 }
 
-.nav-link:active{
+.nav-menue:active{
     color: #F29E9B;
     font-weight: bold;
 }
-.nav-link:hover{
+.nav-menue:hover{
     color: #F29E9B;
 }
 

@@ -358,14 +358,15 @@ p{
 
 .popup{
     position:absolute;
-    top: 10%;
+    top: 3rem;
     right: 0;
     width: 80%;
-    height: 100%;
     overflow:scroll;
     background-color: white;
     border-radius: 40px 40px 0px 0px;
     padding: 10%;
+    transition: all 5s ease-in-out;
+    overflow:hidden;
 }
 
 .popup p{

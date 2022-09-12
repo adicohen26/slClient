@@ -22,13 +22,13 @@ function Navbar(){
             <MenuIcon className="bar" onClick={toggle} />
             {isOpen && <SideBar isOpen={isOpen} toggle={toggle} />}
             <div className="nav-menu">
-                <HashLink className="nav-link" smooth to="/#about">
+                <HashLink className="nav-link nav-menue" smooth to="/#about">
                     אודות
                 </HashLink>
-                <NavLink className="nav-link"  to="/services/">
+                <NavLink className="nav-link nav-menue"  smooth to="/services">
                      החוויות שלנו
                 </NavLink>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link nav-menue" to="/">
                     צור קשר
                 </NavLink>
             </div>
