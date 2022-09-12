@@ -11,6 +11,7 @@ import AllServices from "../allServices/AllServices.jsx";
 import "swiper/css";
 import "swiper/css/pagination";
 import Newsletter from "./Newsletter";
+import LogoLoading from "../loading/LogoLoading";
 
 
 function HomePage(){
@@ -19,6 +20,7 @@ function HomePage(){
    return (<div>
         {isPending && <h1>loading...</h1>}
         <FaceVideo />
+        <LogoLoading />
         <About />
         {data && <Teaser id={"services"} preview={data.previewOptions}/>}
         <AllServices />

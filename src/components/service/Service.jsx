@@ -25,11 +25,11 @@ function Service(props){
         transform: isOpen ? `translateY(0%)` : `translateY(-80%)`
       });
 
-    return <div className="section-container">
+    return <div className="body-container">
         
         {isPending && <h1>loading ..</h1>}
         {data &&<Header heading={data[0].typeName} subHeading="" btnTitle="חזרה לכל החוויות" link="/services"/>}
-        <div className="service-card-container">
+        <div className="service-card-container section-container">
             {data && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} openPopup={openPopup}/>)}
         </div>
         {isOpen && <Popup isOpen={isOpen} setIsOpen={setIsOpen} selectedCard={selectedCard} animation={animation}/>}

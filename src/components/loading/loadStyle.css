@@ -1,0 +1,37 @@
+
+body {
+ /* background: #3a1515; */
+}
+.container {
+	position: relative;
+	height: 100vh;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.logo {
+ fill: #3a1515;
+}
+.logo-back {
+ fill: rgba( #ff0000, .08 )
+}
+.clip {
+	animation: slide 9s infinite;
+}
+ @keyframes slide {
+ from {
+ transform: translateY(-180px);
+}
+ 45% {
+ transform: translateY(0px);
+}
+ 55% {
+ transform: translateY(0px);
+}
+to {
+	transform: translateY(-180px);
+}
+}

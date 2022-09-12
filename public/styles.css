@@ -52,7 +52,9 @@ body{
 
 .body-container{
     margin-bottom: 5%;
+    padding-top:70px;
     background-color: #D4E1D8;
+
 }
 
 .body-container .all-services{
@@ -249,7 +251,8 @@ hr{
 }
 
 .header{
-    padding: 6% 0;
+    padding:0;
+    padding-top: 1%;
     text-align: center;
 }
 
@@ -262,28 +265,49 @@ hr{
     font-weight: bold;
 }
 
-.emphasis{
-    background:#F29E9B ;
-    color: #2f9d5000;
-    padding: .1em .4em;
-    /* position: relative; */
-    position: absolute;
-    width: 5%;
-    height: 9%;
-    left: 0;
-    top: 10%;
-    z-index: 1;
-    animation: lr-bar 750ms;
-  animation-fill-mode: both;
+.emphasis-container{
+    margin: 0;
+    padding: 0;
+    animation: lr-bar 10000ms infinite;
+  animation-fill-mode:both;
   animation-delay: 1500ms;
   animation-timing-function: cubic-bezier(0.500, 0.250, 0.500, 0.750);
 }
+
+.header-sub-heading{
+    position: relative;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.emphasis{
+
+    margin: 0;
+    background:#F29E9B ;
+    color: #f29e9b00;
+    /* padding: 1em 4em; */
+    position: relative;
+    /* position: absolute; */
+    top: 0;
+    /* width: 80%; */
+    height: 9%;
+    left: 0;
+    /* top: 10%; */
+    z-index: 1;
+    /* animation: lr-bar 1750ms;
+  animation-fill-mode:both;
+  animation-delay: 1500ms;
+  animation-timing-function: cubic-bezier(0.500, 0.250, 0.500, 0.750); */
+}
 @keyframes lr-bar {
     0% { transform-origin: center left 0px; transform: scaleX(0); }
-    36% { transform: scaleX(1); transform-origin: center left 0px; }
-    54% { transform: scaleX(1); transform-origin: center right 0px; }
-    90% { transform: scaleX(0);  transform-origin: center right 0px; }
+    20% { transform: scaleX(1); transform-origin: center left 0px; }
+    60% { transform: scaleX(1); transform-origin: center right 0px; }
+    70% { transform: scaleX(0);  transform-origin: center right 0px; }
+    80% { transform: scaleX(0);  transform-origin: center right 0px; }
     100% { transform: scaleX(0);  transform-origin: center right 0px; }
+
   }
 
 
@@ -294,7 +318,8 @@ hr{
 
 .mainHeading{
     display: inline-block;
-    padding-top: 2rem;
+    /* padding-top: rem; */
+    margin: 1rem;
 }
 
 .newsletter{

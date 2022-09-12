@@ -110,6 +110,9 @@
     .footer img{
         width:10%;
     }
+    .header-sub-heading{
+        bottom: 5.5rem;
+    }
     
 }
 
@@ -159,6 +162,10 @@
     .cardsParent{
         width: 80%;
     }
+    .header-sub-heading{
+        bottom:5rem;
+    }
+
 }
 
 /* phone */
@@ -192,6 +199,9 @@
     .newsletter-form{
         flex-wrap: wrap;
     justify-content: center;
+    }
+    .header-sub-heading{
+        bottom: 4.2rem;
     }
 }
 
