@@ -1,7 +1,7 @@
 import React from "react";
 import ReviewCard from "./ReviewCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination,Autoplay } from 'swiper';
+import { Navigation, Pagination,Autoplay, Keyboard } from 'swiper';
 // import { EffectCreative } from "swiper";
 import { EffectCoverflow } from "swiper";
 
@@ -22,7 +22,7 @@ function Testimonials(props){
     <div className="testimonials-swiper">
     <Swiper
     effect={"coverflow"}
-    modules={[EffectCoverflow, Pagination,Autoplay,Navigation]}
+    modules={[EffectCoverflow, Pagination,Autoplay,Navigation,Keyboard]}
     grabCursor={true}
     centeredSlides={true}
     slidesPerView={1}
@@ -40,8 +40,9 @@ function Testimonials(props){
       modifier: 1,
       slideShadows: false,
    }}
-    className="mySwiper"
-    loop
+   keyboard={{enabled: true}}
+   className="mySwiper"
+   loop
     >
         {props.reviews.map((review, index) => {
        return <SwiperSlide key={index} >

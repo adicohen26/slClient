@@ -500,19 +500,21 @@ right: 1rem;
 }
 
  .mySwiper .swiper-button-next{
-/* margin-top: 300px; */
 top:250px !important;
-
 }
+
+
 .mySwiper .swiper-button-prev{
     top:250px !important;
     right: 500px !important;
-    /* margin-bottom: 100px; */
-    }
+}
 
 .swiper-photo-container{    
     padding: 4rem 2rem 1rem;
 
+}
+.swiper-photo-container.swiper{
+    padding: 6%;
 }
 
 .swiper-photo{

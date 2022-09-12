@@ -210,7 +210,6 @@
         margin: 0 auto 0 auto;
         border-radius: 20px;
         padding:4%;
-        
     }
 
     .popup-container{
@@ -227,6 +226,14 @@
     .popup-text-area{
         overflow:scroll;
     }
+
+    /* .swiper-photo-container .swiper-button-next{
+        color: #3B5B66 !important;
+    }
+    .swiper-photo-container .swiper-button-next:hover{
+        color: #ffffff !important;
+    } */
+
     .testimonials{
         width:30rem;
     }

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Keyboard } from 'swiper';
 import PreviewProduct from "./PreviewProduct";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -16,12 +16,13 @@ function Teaser(props){
        <h3 className="lightHeading mainHeading"> מגוון החוויות שלנו </h3>
         <Swiper
       // install Swiper modules
-      modules={[Navigation, EffectFade, Pagination]}
+      modules={[Navigation, EffectFade, Pagination,Keyboard]}
       slidesPerView={1}
       navigation
       speed={800}
       pagination={{ clickable: true }}
       effect
+      keyboard={{enabled: true}}
     //   onSwiper={(swiper) => console.log(swiper)}
     // onSlideChange={() => console.log("on slide change")}
     // onSlideChange={() => setColor(prevValue => 

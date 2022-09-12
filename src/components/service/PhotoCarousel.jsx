@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 // import required modules
-import { EffectCards } from "swiper";
+import { EffectCards, Pagination ,Keyboard} from "swiper";
 
 
 function PhotoCarousel(props){
@@ -15,8 +15,10 @@ function PhotoCarousel(props){
       <Swiper
         effect={"cards"}
         grabCursor={true}
-        modules={[EffectCards]}
+        modules={[EffectCards, Pagination,Keyboard]}
+        pagination={{clickable: true}}
         className="swiper-photo-container"
+        keyboard={{enabled: true}}
       >
         <SwiperSlide ><img className="swiper-photo" src="../../images/about-img.jpg" /></SwiperSlide>
         <SwiperSlide ><img className="swiper-photo" src="../../images/desertWithBackground.jpg" /></SwiperSlide>
