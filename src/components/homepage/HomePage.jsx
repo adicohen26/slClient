@@ -11,16 +11,15 @@ import AllServices from "../allServices/AllServices.jsx";
 import "swiper/css";
 import "swiper/css/pagination";
 import Newsletter from "./Newsletter";
-import LogoLoading from "../loading/LogoLoading";
+import Loading from "../Loading";
 
 
 function HomePage(){
     console.log("im in the homepage, trying to fetch this url " +process.env.REACT_APP_BASE_URL); 
     const {data, isPending, error}=useFetch("https://sharonandlironbe.azurewebsites.net/");
    return (<div>
-        {isPending && <h1>loading...</h1>}
+        {isPending && <Loading />}
         <FaceVideo />
-        <LogoLoading />
         <About />
         {data && <Teaser id={"services"} preview={data.previewOptions}/>}
         <AllServices />

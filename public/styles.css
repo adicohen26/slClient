@@ -309,6 +309,21 @@ hr{
     margin: auto 0.5rem;
 }
 
+.loading-section{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: #3b5b66e2;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
 .mainHeading{
     display: inline-block;
     margin: 1rem;
@@ -370,6 +385,7 @@ align-items: center;
     text-shadow: 3px 3px 8px #000000;
     opacity: 0.6;
  }
+
 
 p{
     font-size: 0.7rem;

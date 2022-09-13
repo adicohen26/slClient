@@ -5,6 +5,7 @@ import ServiceCard from "./ServiceCard";
 import Popup from "./Popup";
 import { useSpring, animated } from 'react-spring';
 import Header from "../Header";
+import Loading from "../Loading";
 
 function Service(props){
     const { service } = useParams();
@@ -26,8 +27,7 @@ function Service(props){
       });
 
     return <div className="body-container">
-        
-        {isPending && <h1>loading ..</h1>}
+        {isPending && <Loading />}
         {data &&<Header heading={data[0].typeName} subHeading="" btnTitle="חזרה לכל החוויות" link="/services"/>}
         <div className="service-card-container section-container">
             {data && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} openPopup={openPopup}/>)}
