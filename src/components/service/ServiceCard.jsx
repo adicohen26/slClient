@@ -32,7 +32,10 @@ function ServiceCard(props) {
     props.openPopup(cardInfo);
   }
   return <Card className="cardsParent">
-    <CardActionArea onClick={handelClick} >
+    <CardActionArea 
+    onClick={handelClick}
+    sx={{"&:hover" : {opacity:0.3}}}
+    >
       <CardMedia
         component="img"
         height="250rem"

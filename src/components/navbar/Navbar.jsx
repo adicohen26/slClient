@@ -25,7 +25,7 @@ function Navbar(){
                 <HashLink className="nav-link nav-menue" smooth to="/#about">
                     אודות
                 </HashLink>
-                <NavLink className="nav-link nav-menue"  smooth to="/services">
+                <NavLink className="nav-link nav-menue" to="/services">
                      החוויות שלנו
                 </NavLink>
                 <NavLink className="nav-link nav-menue" to="/">

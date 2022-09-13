@@ -274,6 +274,10 @@ hr{
   animation-timing-function: cubic-bezier(0.500, 0.250, 0.500, 0.750);
 }
 
+.non-emphasis-container{
+    display: inline;
+}
+
 .header-sub-heading{
     position: relative;
     
@@ -282,7 +286,6 @@ hr{
 }
 
 .emphasis{
-
     margin: 0;
     background:#F29E9B ;
     color: #f29e9b00;
@@ -308,14 +311,12 @@ hr{
 
 .mainHeading{
     display: inline-block;
-    /* padding-top: rem; */
     margin: 1rem;
 }
 
 .newsletter{
     background-color: #3B5B66;
     display: block;
-    /* width: 100%; */
 }
 .newsletter-container h3{
     margin:5%;
@@ -357,12 +358,17 @@ align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    /* text-shadow: 2px 2px 8px #0000008e; */
  }
 
- .overlay h2{
+ .overlay h1{
     margin: 0px;
+ }
+
+ .subject-card:hover{
+    font-weight: bold;
+    color: #3B5B66;
+    text-shadow: 3px 3px 8px #000000;
+    opacity: 0.6;
  }
 
 p{
