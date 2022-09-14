@@ -27,7 +27,7 @@ env:
   AZURE_WEBAPP_NAME: SharonAndLiron    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: 'build'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '16.16'                # set this to the node version to use
-  REACT_APP_BASE_URL: process.env.REACT_APP_BASE_URL
+  REACT_APP_BASE_URL: ${{process.env.REACT_APP_BASE_URL}}
 #   REACT_APP_BASE_URL: 'https://sharonandlironbe.azurewebsites.net/'
 
 permissions:
