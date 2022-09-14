@@ -25,8 +25,7 @@ function Header(props){
         </div>
         {props.subHeading && <h3 className="darkHeading mainHeading header-sub-heading">{props.subHeading}</h3>}
         
-
-        {/* {props.btnTitle && <Fab variant="extended" color="secondary" size="large" theme={theme3} type="submit"> {props.btnTitle}</Fab>} */}
+{/*   {props.btnTitle && <Fab variant="extended" color="secondary" size="large" theme={theme3} type="submit"> {props.btnTitle}</Fab>} */}
         {props.btnTitle && <a href={props.link} className="darkHeading header-link"> {props.btnTitle}</a>}
     </div>
 }
