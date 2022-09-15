@@ -13,7 +13,6 @@ import Loading from "../Loading";
 
 function HomePage(){
     console.log("im in the homepage, trying to fetch this url " +process.env.REACT_APP_BASE_URL); 
-    // const {data, isPending, error}=useFetch("https://sharonandlironbe.azurewebsites.net/");
     const {data, isPending, error}=useFetch(process.env.REACT_APP_BASE_URL);
    return (<div>
         {isPending && <Loading />}

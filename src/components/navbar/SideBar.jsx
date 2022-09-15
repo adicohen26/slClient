@@ -36,7 +36,7 @@ function SideBar(props) {
                 <a className='side-bar-link-sub' href="/" onClick={toggle}>
                     הרצאות
                 </a>
-                <a className='side-bar-link' href="/" onClick={toggle}>
+                <a className='side-bar-link' href="https://forms.gle/QtFdKGkXtyVnL8RM9" onClick={toggle}>
                     צור קשר
                 </a>
             </div>

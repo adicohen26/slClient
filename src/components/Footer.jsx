@@ -7,7 +7,7 @@ function Footer () {
     <h3 className="lightHeading mainHeading"> אל תדאגו, זה טבעי לגמרי </h3>
     <h2 className="lightHeading ">גם לנו הגיע התאבון</h2>
     <div className='footer-contact-container'>
-        <a href='' className="contact-link"> 
+        <a href='https://forms.gle/QtFdKGkXtyVnL8RM9' className="contact-link"> 
         {/* <TouchAppIcon sx={{ color: 'white' }} fontSize="large" className="contact-icon" /> */}
         דברו איתנו</a>
     </div>

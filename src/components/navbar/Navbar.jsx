@@ -28,7 +28,7 @@ function Navbar(){
                 <NavLink className="nav-link nav-menue" to="/services">
                      החוויות שלנו
                 </NavLink>
-                <NavLink className="nav-link nav-menue" to="/">
+                <NavLink className="nav-link nav-menue" to="https://forms.gle/QtFdKGkXtyVnL8RM9">
                     צור קשר
                 </NavLink>
             </div>
