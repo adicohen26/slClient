@@ -11,6 +11,7 @@ import { EffectCards, Pagination ,Keyboard} from "swiper";
 
 
 function PhotoCarousel(props){
+  console.log(props);
     return <>
       <Swiper
         effect={"cards"}
@@ -20,6 +21,7 @@ function PhotoCarousel(props){
         className="swiper-photo-container"
         keyboard={{enabled: true}}
       >
+        {/* {props.imgName.map((img,index) => <SwiperSlide ><img className="swiper-photo" src={img} key={index} /></SwiperSlide>)} */}
         <SwiperSlide ><img className="swiper-photo" src="../../images/about-img.jpg" /></SwiperSlide>
         <SwiperSlide ><img className="swiper-photo" src="../../images/desertWithBackground.jpg" /></SwiperSlide>
         <SwiperSlide ><img className="swiper-photo" src="../../images/about-img.jpg" /></SwiperSlide>

@@ -14,6 +14,8 @@ function Service(props){
     const [isOpen,setIsOpen]=useState(false);
     const [selectedCard, setSelectedCard]=useState("");
     
+    console.log(data);
+
     function openPopup(cardInfo){
         setSelectedCard(cardInfo);
         setIsOpen(true);

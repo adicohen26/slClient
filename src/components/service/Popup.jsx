@@ -15,7 +15,7 @@ function Popup(props){
         props.setIsOpen(false);
     }
     const popupInfo=props.selectedCard;
-    
+    console.log(popupInfo);
     return  <div className='popup-background' onClick={closePopup}>
          <animated.div style={props.animation}>
         <div className='popup' onClick={handelClick}>
