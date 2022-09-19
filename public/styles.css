@@ -10,7 +10,7 @@
 
 .about-discription{
     background-color: white;
-    padding: 6rem 2rem 2rem 2rem;
+    padding: 4.5rem 2rem 2rem 2rem;
     width: 70%;
     border-radius: 0.5rem;
     position: relative;
@@ -338,7 +338,7 @@ hr{
 
 .mainHeading{
     display: inline-block;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .newsletter{
@@ -520,7 +520,7 @@ align-items: center;
 }
 .review-name{
 position: relative;
-bottom: 4.5rem;
+bottom: 2.5rem;
 right: 1rem;
 }
 .testimonials p{

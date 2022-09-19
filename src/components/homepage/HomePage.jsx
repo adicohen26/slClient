@@ -21,7 +21,7 @@ function HomePage(){
         {data && <Teaser id={"services"} preview={data.previewOptions}/>}
         <AllServices />
         {data && <Testimonials reviews={data.reviews} />}
-        <Newsletter />
+        {/* <Newsletter /> */}
     </div>)
 }
 

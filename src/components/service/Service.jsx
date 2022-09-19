@@ -6,14 +6,14 @@ import Popup from "./Popup";
 import { useSpring, animated } from 'react-spring';
 import Header from "../Header";
 import Loading from "../Loading";
+import LectureCard from "./LectureCard";
 
 function Service(props){
     const { service } = useParams();
     const url=process.env.REACT_APP_BASE_URL+"services/"+service;
     const {data,isPending,error}=useFetch(url);
     const [isOpen,setIsOpen]=useState(false);
-    const [selectedCard, setSelectedCard]=useState("");
-console.log(data);    
+    const [selectedCard, setSelectedCard]=useState(""); 
 
     function openPopup(cardInfo){
         setSelectedCard(cardInfo);
@@ -31,7 +31,8 @@ console.log(data);
         {isPending && <Loading />}
         {data &&<Header heading={data[0].typeName} subHeading="" btnTitle="חזרה לכל החוויות" link="/services"/>}
         <div className="service-card-container section-container">
-            {data && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} imgPath={"../../images/"+data.type+"/"} openPopup={openPopup}/>)}
+            {data && data[0].type!=="lecture" && data[0].type!=="foodWorkshop" && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} imgPath={"../../images/"+data.type+"/"} openPopup={openPopup}/>)}
+            {data && (data[0].type==="lecture" || data[0].type==="foodWorkshop") && data.map((data,index) => <LectureCard key={index} data={data} id={data.name} />)}
         </div>
         {isOpen && <Popup imgPath={"../../images/"+data[0].type+"/"} isOpen={isOpen} setIsOpen={setIsOpen} selectedCard={selectedCard} animation={animation}/>}
     </div>

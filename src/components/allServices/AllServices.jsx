@@ -10,8 +10,8 @@ function AllServices(){
             <SubjectCard name="דוכני בוטיק" img="woodTrayBanner.png" link="/services/boutiqueBooth" />
         </div>
         <div className="small-cards-container row-two">
-            <SubjectCard name="סדנאות" img="panBanner.png" link="/"/>
-            <SubjectCard name="הרצאות" img="booksBanner.png" link="/" />
+            <SubjectCard name="סדנאות" img="panBanner.png" link="/services/foodWorkshop"/>
+            <SubjectCard name="הרצאות" img="booksBanner.png" link="/services/lecture" />
         </div>
 </div>
 }
