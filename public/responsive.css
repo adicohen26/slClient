@@ -47,7 +47,7 @@
         right:0;
         bottom:3rem;
         font-size: 140%;
-        padding: 7%;
+        padding: 3%;
         padding-right: 7%;
     }
     .about-info{
@@ -59,15 +59,14 @@
         height: 22rem;
     }
     .previewProduct img{
-        max-width: 300px;
-        width: 100%;
+        max-width: 500px;
+        width: 140%;
         height: auto;
-        bottom: -5rem;
+        bottom: 2rem;
         display: flow-root;
-        /* display: block; */
-        /* position: relative; */
     }
     .preview-heading-container{
+       
         width:80%;
         display:flow-root;
         text-align: left;

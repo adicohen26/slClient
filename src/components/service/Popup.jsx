@@ -15,13 +15,12 @@ function Popup(props){
         props.setIsOpen(false);
     }
     const popupInfo=props.selectedCard;
-    console.log(popupInfo);
     return  <div className='popup-background' onClick={closePopup}>
          <animated.div style={props.animation}>
         <div className='popup' onClick={handelClick}>
             <CloseIcon  onClick={closePopup}/>
             <div className='popup-container'>
-                <PhotoCarousel data={popupInfo.imgName}/>
+                <PhotoCarousel data={popupInfo.imgName} imgPath={props.imgPath}/>
                 <div className='popup-text-area'>
                     <h2 className='darkHeading'>{popupInfo.name}</h2>
                     <h3 className='darkHeading'>{popupInfo.typeName}</h3>

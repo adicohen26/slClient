@@ -13,8 +13,7 @@ function Service(props){
     const {data,isPending,error}=useFetch(url);
     const [isOpen,setIsOpen]=useState(false);
     const [selectedCard, setSelectedCard]=useState("");
-    
-    console.log(data);
+console.log(data);    
 
     function openPopup(cardInfo){
         setSelectedCard(cardInfo);
@@ -32,9 +31,9 @@ function Service(props){
         {isPending && <Loading />}
         {data &&<Header heading={data[0].typeName} subHeading="" btnTitle="חזרה לכל החוויות" link="/services"/>}
         <div className="service-card-container section-container">
-            {data && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} openPopup={openPopup}/>)}
+            {data && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} imgPath={"../../images/"+data.type+"/"} openPopup={openPopup}/>)}
         </div>
-        {isOpen && <Popup isOpen={isOpen} setIsOpen={setIsOpen} selectedCard={selectedCard} animation={animation}/>}
+        {isOpen && <Popup imgPath={"../../images/"+data[0].type+"/"} isOpen={isOpen} setIsOpen={setIsOpen} selectedCard={selectedCard} animation={animation}/>}
     </div>
 }
 

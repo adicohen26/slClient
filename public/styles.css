@@ -1,4 +1,7 @@
 .about{
+    /* background-color: #74938b; */
+    /* background-color: #F29E9B; */
+    /* background-color: #3B5B66; */
     background-color: #D4E1D8;
     display: block;
     padding: 0 2rem ;
@@ -21,6 +24,7 @@
     width: 75%;
     height: 20rem;
     border-radius: 0.5rem;
+    /* border: solid 10px #b5ccbc; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,13 +390,6 @@ align-items: center;
     opacity: 0.6;
  }
 
-
-p{
-    font-size: 0.7rem;
-}
-
-
-
 .popup{
     position:absolute;
     top: 3rem;
@@ -435,6 +432,10 @@ p{
 
 }
 
+.preview-heading-container h1{
+    margin-top: 0;
+}
+
 .previewProduct{
     text-align: end;
     margin: 0 auto 0 auto;
@@ -445,9 +446,9 @@ p{
 .previewProduct img{
     display: flow-root;
     position: absolute;
-    bottom: -4rem;
+    bottom: 3rem;
     z-index: -1;
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto 0 auto;
 
@@ -472,7 +473,9 @@ p{
     height: 35rem;
     border: 0.8rem;
     border-style: solid;
+    /* border-color: #3B5B66; */
     border-color: #F29E9B;
+    /* border-color: #D4E1D8; */
     /* display: inline-block; */
     position: absolute;
 }
@@ -555,9 +558,9 @@ top:250px !important;
 }
 
 .swiper-photo{
-    max-width: 100%;
-  height: auto;
-  object-fit: contain;
+    width: 27rem;
+    height: 23rem;
+    object-fit: cover;
 }
 
 .testimonials {

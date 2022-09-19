@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 // import required modules
-import { EffectCards, Pagination ,Keyboard} from "swiper";
+import { EffectCards, Pagination ,Keyboard, Autoplay} from "swiper";
 
 
 function PhotoCarousel(props){
@@ -16,16 +16,17 @@ function PhotoCarousel(props){
       <Swiper
         effect={"cards"}
         grabCursor={true}
-        modules={[EffectCards, Pagination,Keyboard]}
+              shadow= {false}
+        modules={[EffectCards, Pagination,Keyboard, Autoplay]}
         pagination={{clickable: true}}
         className="swiper-photo-container"
         keyboard={{enabled: true}}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
       >
-        {/* {props.imgName.map((img,index) => <SwiperSlide ><img className="swiper-photo" src={img} key={index} /></SwiperSlide>)} */}
-        <SwiperSlide ><img className="swiper-photo" src="../../images/about-img.jpg" /></SwiperSlide>
-        <SwiperSlide ><img className="swiper-photo" src="../../images/desertWithBackground.jpg" /></SwiperSlide>
-        <SwiperSlide ><img className="swiper-photo" src="../../images/about-img.jpg" /></SwiperSlide>
-        <SwiperSlide ><img className="swiper-photo" src="../../images/desertWithBackground.jpg" /></SwiperSlide>
+        {props.data.map((img,index) => <SwiperSlide key={index}><img className="swiper-photo" src={props.imgPath+img}  /></SwiperSlide>)}
       </Swiper>
     </>
 }

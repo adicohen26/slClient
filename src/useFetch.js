@@ -5,7 +5,6 @@ const useFetch = (url) => {
     const [data,setData]=useState(null);
     const [isPending,setPanding]=useState((true));
     useEffect(() => {
-        console.log(url + " trying to fetch this url");
         fetch(url)
         .then((response) => {
             if(!response.ok){

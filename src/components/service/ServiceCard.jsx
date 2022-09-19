@@ -2,7 +2,6 @@ import React from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
-import {Link} from "react-router-dom";
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import GroupIcon from '@mui/icons-material/Group';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
@@ -26,6 +25,7 @@ function ServiceCard(props) {
   }
   );
   const cardInfo=props.data;
+  const imgPath="../../images/"+cardInfo.type+"/";
   const shortDiscription=cardInfo.discription.substring(0,85);
 
   function handelClick(){
@@ -39,7 +39,7 @@ function ServiceCard(props) {
       <CardMedia
         component="img"
         height="250rem"
-        image={"../../images/desertWithBackground.jpg"}
+        image={imgPath+cardInfo.imgName[0]}
         alt="courses"
       />
       <CardContent>
