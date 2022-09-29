@@ -9,6 +9,7 @@ import AllServices from "../allServices/AllServices.jsx";
 // import "swiper/css/pagination";
 import Newsletter from "./Newsletter";
 import Loading from "../Loading";
+import Customers from "./Customers";
 
 
 function HomePage(){
@@ -21,6 +22,7 @@ function HomePage(){
         {data && <Teaser id={"services"} preview={data.previewOptions}/>}
         <AllServices />
         {data && <Testimonials reviews={data.reviews} />}
+        <Customers />
         {/* <Newsletter /> */}
     </div>)
 }

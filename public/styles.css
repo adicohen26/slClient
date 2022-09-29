@@ -135,6 +135,19 @@ body{
 
 }
 
+.customers-container img{
+    margin: 1% 5%;
+    max-width: 20%;
+    max-height: 9rem;
+}
+
+.customers-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6%;
+}
 
 .contact-ways{
     display: inline-flex; 

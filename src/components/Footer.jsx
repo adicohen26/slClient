@@ -5,7 +5,7 @@ import TouchAppIcon from '@mui/icons-material/TouchApp';
 function Footer () {
   return <div className='footer'>
     <h3 className="lightHeading mainHeading"> אל תדאגו, זה טבעי לגמרי </h3>
-    <h2 className="lightHeading ">גם לנו הגיע התאבון</h2>
+    <h2 className="lightHeading ">גם לנו נפתח  התאבון</h2>
     <div className='footer-contact-container'>
         <a href='https://forms.gle/QtFdKGkXtyVnL8RM9' className="contact-link"> 
         {/* <TouchAppIcon sx={{ color: 'white' }} fontSize="large" className="contact-icon" /> */}
