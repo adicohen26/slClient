@@ -185,6 +185,10 @@
     .about{
     padding: 0 2rem ;
     }
+
+    .btn{
+        margin-top: 4% !important;
+    }
     .testimonials .rectengle{
         top: 7rem;
         left: 1.5rem;
@@ -257,6 +261,24 @@
     .testimonials .rectengle{
         top: 6.7rem;
         left: 4.5rem;
+    }
+
+    .footer-link :hover{
+        color: white;
+    }
+    .contact-link :hover{
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+    .subject-card:hover{
+        font-weight: bold;
+        color: #3B5B66;
+        text-shadow: 3px 3px 8px #000000;
+        opacity: 0.6;
+     }
+    .header-link:hover{
+        color: #F29E9B;
+        font-weight: bold;
     }
 }
 

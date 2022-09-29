@@ -16,7 +16,6 @@ function PhotoCarousel(props){
       <Swiper
         effect={"cards"}
         grabCursor={true}
-              shadow= {false}
         modules={[EffectCards, Pagination,Keyboard, Autoplay]}
         pagination={{clickable: true}}
         className="swiper-photo-container"

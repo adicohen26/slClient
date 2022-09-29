@@ -33,10 +33,10 @@ function PreviewProduct(props){
         <div className="productDiscription">
             <h4 className="darkHeading">{item.name}</h4>
             {item.benefits.map((benefit,index) => <p className="darkHeading" key={index}>{benefit}</p>)}
-            <Fab variant="extended" color="primary" size="small" theme={theme}>
-                 לכל  {item.typeName}
+            <Fab className="btn" variant="extended" color="primary" size="small" theme={theme} href={"/services/"+item.type}>
+              {item.typeName}
             </Fab>
-            <Fab variant="extended" color="secondary" size="small" theme={theme}>
+            <Fab className="btn" variant="extended" color="secondary" size="small" theme={theme} href={"/services/"+item.type+"?productId="+item.productId}>
              {item.productName}
             </Fab>
         </div>

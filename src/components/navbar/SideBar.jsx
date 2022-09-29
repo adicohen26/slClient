@@ -30,10 +30,10 @@ function SideBar(props) {
                 <a className='side-bar-link-sub' href="/services/boutiqueBooth" onClick={toggle}>
                     דוכני בוטיק
                 </a>
-                <a className='side-bar-link-sub' href="/" onClick={toggle}>
+                <a className='side-bar-link-sub' href="/services/foodWorkshop" onClick={toggle}>
                     סדנאות
                 </a>
-                <a className='side-bar-link-sub' href="/" onClick={toggle}>
+                <a className='side-bar-link-sub' href="/services/lecture" onClick={toggle}>
                     הרצאות
                 </a>
                 <a className='side-bar-link' href="https://forms.gle/QtFdKGkXtyVnL8RM9" onClick={toggle}>
