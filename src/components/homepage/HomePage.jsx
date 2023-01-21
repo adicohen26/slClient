@@ -19,9 +19,9 @@ function HomePage(){
         {isPending && <Loading />}
         <FaceVideo />
         <About />
-        {data && <Teaser id={"services"} preview={data}/>}
+        {data && <Teaser id={"services"} preview={data.previewOptions}/>}
         <AllServices />
-//         {data && <Testimonials reviews={data.reviews} />}
+        {data && <Testimonials reviews={data.reviews} />}
         <Customers />
         {/* <Newsletter /> */}
     </div>)
